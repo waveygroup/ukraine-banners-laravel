@@ -15,7 +15,7 @@ class UkraineBannersServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/ukraine-banners.php', 'ukraine-banners');
+        $this->mergeConfigFrom(__DIR__.'/../config/ukraine-banners.php', 'ukraine-banners');
     }
 
     /**
@@ -36,7 +36,8 @@ class UkraineBannersServiceProvider extends ServiceProvider
     /**
      * Register the given component.
      *
-     * @param  string  $component
+     * @param string $component
+     *
      * @return void
      */
     protected function registerComponent(string $component)
@@ -51,7 +52,7 @@ class UkraineBannersServiceProvider extends ServiceProvider
      */
     protected function configureCommands()
     {
-        if (! $this->app->runningInConsole()) {
+        if (!$this->app->runningInConsole()) {
             return;
         }
 
@@ -67,7 +68,7 @@ class UkraineBannersServiceProvider extends ServiceProvider
      */
     protected function configurePublishing()
     {
-        if (! $this->app->runningInConsole()) {
+        if (!$this->app->runningInConsole()) {
             return;
         }
 
