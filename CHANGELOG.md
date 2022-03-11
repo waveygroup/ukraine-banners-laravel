@@ -1,7 +1,7 @@
 # Changelog
 
-All notable changes to `:package_name` will be documented in this file.
+All notable changes to `wavey\ukraine-banners` will be documented in this file.
 
-## 1.0.0 - 202X-XX-XX
+## 1.0.0 - 2022-04-11
 
 - initial release

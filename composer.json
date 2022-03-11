@@ -1,16 +1,22 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "wavey/ukraine-banners",
+    "description": "🇺🇦 Ukraine Support Banners for your Laravel Application.",
     "keywords": [
-        ":vendor_name",
-        ":package_slug"
+        "wavey",
+        "laravel",
+        "ukraine",
+        "standwithukraine"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "support": {
+        "issues": "https://github.com/waveygroup/ukraine-banners/issues",
+        "source": "https://github.com/waveygroup/ukraine-banners"
+    },
+    "homepage": "https://github.com/waveygroup/ukraine-banners-laravel",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Kieran Heron",
+            "email": "kieran@wavey.group",
             "role": "Developer"
         }
     ],
@@ -24,18 +30,28 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "Wavey\\UkraineBanners\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Wavey\\UkraineBanners\\Tests\\": "tests"
         }
     },
     "scripts": {
         "test": "vendor/bin/pest",
         "test-coverage": "vendor/bin/pest --coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Wavey\\UkraineBanners\\UkraineBannersServiceProvider"
+            ]
+        }
     },
     "config": {
         "sort-packages": true
