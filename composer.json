@@ -8,8 +8,8 @@
         "standwithukraine"
     ],
     "support": {
-        "issues": "https://github.com/waveygroup/ukraine-banners/issues",
-        "source": "https://github.com/waveygroup/ukraine-banners"
+        "issues": "https://github.com/waveygroup/ukraine-banners-laravel/issues",
+        "source": "https://github.com/waveygroup/ukraine-banners-laravel"
     },
     "homepage": "https://github.com/waveygroup/ukraine-banners-laravel",
     "license": "MIT",
@@ -37,11 +37,6 @@
         "psr-4": {
             "Wavey\\UkraineBanners\\Tests\\": "tests"
         }
-    },
-    "scripts": {
-        "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
     },
     "extra": {
         "branch-alias": {
